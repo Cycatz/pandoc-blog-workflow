@@ -1,0 +1,13 @@
+from: markdown+smart+definition_lists+strikeout+superscript+subscript
+to: html
+
+standalone: true
+template: blog-homepage.html
+
+metadata:
+  title: 棧列 Staque
+  author: Cycatz
+
+highlight-style: monochrome
+tab-stop: 2
+
