@@ -6,7 +6,7 @@ standalone: true
 metadata:
   author: Cycatz
 
-variable:
+variables:
   site-title: 棧列 Staque
 
 highlight-style: monochrome
