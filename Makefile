@@ -31,7 +31,7 @@ $(BUILD_INDEX_FILE): index.md template/$(HOMEPAGE).html css/$(HOMEPAGE).css
 		--katex \
 		-d default/$(HOMEPAGE).yaml \
 		--css css/$(HOMEPAGE).css \
-		--metadata date="$$(date +"%Y-%m-%d")"\
+		--metadata date="$$(date +"%Y-%m-%d")" \
 		--lua-filter filter/links-to-html.lua \
 		--template $(HOMEPAGE) $<
 
@@ -40,10 +40,11 @@ $(BUILD_HTML_FILES): $(MD_FILES) template/$(ARTICLE).html css/$(ARTICLE).css
 	mkdir -p $(@D) $(CSS_FILES)
 	cp css/$(ARTICLE).css $(CSS_FILES)
 	pandoc -o $@ \
-		--katex\
+		--katex \
+		--toc \
 		-d default/$(ARTICLE).yaml \
 		--css ../css/$(ARTICLE).css \
-		--metadata date="$$(date +"%Y-%m-%d")"\
+		--metadata date="$$(date +"%Y-%m-%d")" \
 		--lua-filter filter/links-to-html.lua \
 		--template $(ARTICLE) $<
 
