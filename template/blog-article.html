@@ -41,11 +41,11 @@ $endfor$
 <body>
 <div id="id_wrapper">
 
-$if(title)$
+$if(site-title)$
 <div id="id_header"> 
 <header id="title-block-header">
 <div class="site-title">
-<a class="site-name" href="/">$title$</a>
+<a class="site-name" href="/">$site-title$</a>
 </div>
 $if(post-title)$
 <h1 class="post-title">$post-title$</h1>
@@ -79,8 +79,8 @@ $endfor$
 
 <footer class="site-footer">
 <hr/>
-$if(title)$
-<a href="about.html">$title$</a>.
+$if(site-title)$
+<a href="about.html">$site-title$</a>.
 $endif$
 Powered by <a target="_blank" href="https://github.com/vimwiki/vimwiki">vimwiki</a>, 
 <a target="_blank" href="https://pandoc.org">pandoc</a>
