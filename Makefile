@@ -18,7 +18,8 @@ build/assets/%: assets/%
 	cp $? $@
 
 $(OPTIMIZED_FONTS): fonts/ $(BUILD_INDEX_FILE) $(BUILD_HTML_FILES) 
-	@mkdir -p $@
+	rm -rf $@
+	mkdir -p $@
 	cp -r fonts/* $@
 	font-spider --no-backup $(BUILD_INDEX_FILE) $(BUILD_HTML_FILES)
 	$$(bash ./add-timestamp.sh)
