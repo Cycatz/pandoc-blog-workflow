@@ -24,7 +24,7 @@ $(OPTIMIZED_FONTS): fonts/ $(BUILD_INDEX_FILE) $(BUILD_HTML_FILES)
 	font-spider --no-backup $(BUILD_INDEX_FILE) $(BUILD_HTML_FILES)
 	$$(bash ./add-timestamp.sh)
 	
-build/index.html: index.md template/$(HOMEPAGE).html css/$(HOMEPAGE).css
+build/index.html: index.md template/$(HOMEPAGE).html css/$(HOMEPAGE).css css/font.css
 	@echo index.md
 	mkdir -p $(CSS_FILES)
 	cp css/font.css $(CSS_FILES)
@@ -36,7 +36,7 @@ build/index.html: index.md template/$(HOMEPAGE).html css/$(HOMEPAGE).css
 		--lua-filter filter/links-to-html.lua \
 		--template $(HOMEPAGE) $<
 
-build/%.html: %.md template/$(ARTICLE).html css/$(ARTICLE).css
+build/%.html: %.md template/$(ARTICLE).html css/$(ARTICLE).css css/font.css
 	@echo $<
 	mkdir -p $(@D) $(CSS_FILES)
 	cp css/font.css $(CSS_FILES)
