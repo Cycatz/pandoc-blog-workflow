@@ -2,15 +2,16 @@
 
 @font-face {
 	font-family: 'Inconsolata';
-	src: url('../fonts/Latin/Inconsolata/Inconsolata-Regular.ttf');
+	src: local("Inconsolata") 
+			 url('../fonts/Latin/Inconsolata/Inconsolata-Regular.ttf');
 	font-weight: normal;
 }
 @font-face {
 	font-family: 'Inconsolata';
-	src: url('../fonts/Latin/Inconsolata/Inconsolata-Bold.ttf');
+	src: local("Inconsolata") 
+			 url('../fonts/Latin/Inconsolata/Inconsolata-Bold.ttf');
 	font-weight: bold;
 }
-
 @font-face {
 	font-family: 'EB Garamond';
 	src: url('../fonts/Latin/EB_Garamond/EBGaramond-Regular.ttf');
