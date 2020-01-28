@@ -21,12 +21,12 @@ $(OPTIMIZED_FONTS): fonts/ $(BUILD_INDEX_FILE) $(BUILD_HTML_FILES)
 	@mkdir -p $@
 	cp -r fonts/* $@
 	font-spider --no-backup $(BUILD_INDEX_FILE) $(BUILD_HTML_FILES)
-	rm -r build/fonts/Latin
-	cp -rf fonts/Latin $@
+	$$(bash ./add-timestamp.sh)
 	
 build/index.html: index.md template/$(HOMEPAGE).html css/$(HOMEPAGE).css
 	@echo index.md
 	mkdir -p $(CSS_FILES)
+	cp css/font.css $(CSS_FILES)
 	cp css/$(HOMEPAGE).css $(CSS_FILES)
 	pandoc -o $@ \
 		--katex \
@@ -38,6 +38,7 @@ build/index.html: index.md template/$(HOMEPAGE).html css/$(HOMEPAGE).css
 build/%.html: %.md template/$(ARTICLE).html css/$(ARTICLE).css
 	@echo $<
 	mkdir -p $(@D) $(CSS_FILES)
+	cp css/font.css $(CSS_FILES)
 	cp css/$(ARTICLE).css $(CSS_FILES)
 	pandoc -o $@ \
 		--katex \
