@@ -1,7 +1,7 @@
 #!/bin/bash
 suff=ttf
 fonts=$(find ./build -name \*.${suff})
-timestamp=$(date -Isecond)
+timestamp=$(date +%s)
 
 for font in ${fonts};
 do
