@@ -1,5 +1,5 @@
 #!/bin/bash
-suff=ttf
+suff=woff2
 fonts=$(find ./build -name \*.${suff})
 timestamp=$(date +%s)
 
