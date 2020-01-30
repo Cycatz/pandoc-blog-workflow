@@ -1,65 +1,77 @@
 /* font imports */ 
 @font-face {
 	font-family: 'Inconsolata';
-	src: url('../fonts/Latin/Inconsolata/Inconsolata-Regular.ttf');
+	src: url('../fonts/Latin/Inconsolata/Inconsolata-Regular.woff2') format('woff2'),
+			 url('../fonts/Latin/Inconsolata/Inconsolata-Regular.ttf') format('truetype');
 	font-weight: normal;
 }
 @font-face {
 	font-family: 'Inconsolata';
-	src: url('../fonts/Latin/Inconsolata/Inconsolata-Bold.ttf');
+	src: url('../fonts/Latin/Inconsolata/Inconsolata-Bold.woff2') format('woff2'),
+			 url('../fonts/Latin/Inconsolata/Inconsolata-Bold.ttf') format('truetype');
 	font-weight: bold;
 }
 
 @font-face {
 	font-family: 'EB Garamond';
-	src: url('../fonts/Latin/EB_Garamond/EBGaramond-Regular.ttf');
+	src: url('../fonts/Latin/EB_Garamond/EBGaramond-Regular.woff2') format('woff2'),
+			 url('../fonts/Latin/EB_Garamond/EBGaramond-Regular.ttf') format('truetype');
 	font-weight: normal;
 }
 
 @font-face {
 	font-family: 'Libre Baskerville';
-	src: url('../fonts/Latin/Libre_Baskerville/LibreBaskerville-Regular.ttf');
+	src: url('../fonts/Latin/Libre_Baskerville/LibreBaskerville-Regular.woff2') format('woff2'),
+			 url('../fonts/Latin/Libre_Baskerville/LibreBaskerville-Regular.ttf') format('truetype');
 	font-weight: normal;
 }
 @font-face {
 	font-family: 'Libre Baskerville';
-	src: url('../fonts/Latin/Libre_Baskerville/LibreBaskerville-Regular.ttf');
+	src: url('../fonts/Latin/Libre_Baskerville/LibreBaskerville-Regular.woff2') format('woff2'),
+			 url('../fonts/Latin/Libre_Baskerville/LibreBaskerville-Regular.ttf') format('truetype');
 	font-weight: 500;
 }
 @font-face {
 	font-family: 'Libre Baskerville';
-	src: url('../fonts/Latin/Libre_Baskerville/LibreBaskerville-Italic.ttf');
+	src: url('../fonts/Latin/Libre_Baskerville/LibreBaskerville-Italic.woff2') format('woff2'),
+			 url('../fonts/Latin/Libre_Baskerville/LibreBaskerville-Italic.ttf') format('truetype');
 	font-style: italic;
 }
 @font-face {
 	font-family: 'Libre Baskerville';
-	src: url('../fonts/Latin/Libre_Baskerville/LibreBaskerville-Bold.ttf');
+	src: url('../fonts/Latin/Libre_Baskerville/LibreBaskerville-Bold.woff2') format('woff2'),
+			 url('../fonts/Latin/Libre_Baskerville/LibreBaskerville-Bold.ttf') format('truetype');
 	font-weight: bold;
 }
 
 @font-face {
 	font-family: 'Taipei Sans';
-	src: url('../fonts/CJK/TaipeiSansTCBeta/TaipeiSansTCBeta-Regular.ttf');
+	src: url('../fonts/CJK/TaipeiSansTCBeta/TaipeiSansTCBeta-Regular.woff2') format('woff2'),
+			 url('../fonts/CJK/TaipeiSansTCBeta/TaipeiSansTCBeta-Regular.ttf') format('truetype');
 	font-weight: normal;
 }
 
 @font-face {
 	font-family: 'GenRyu';
-	src: url('../fonts/CJK/GenRyuMin/GenRyuMinTW-Regular.ttf');
+	src: url('../fonts/CJK/GenRyuMin/GenRyuMinTW-Regular.woff2') format('woff2'),
+			 url('../fonts/CJK/GenRyuMin/GenRyuMinTW-Regular.ttf') format('truetype');
 	font-weight: normal;
 }
 @font-face {
 	font-family: 'GenRyu';
-	src: url('../fonts/CJK/GenRyuMin/GenRyuMinTW-Medium.ttf');
+	src: url('../fonts/CJK/GenRyuMin/GenRyuMinTW-Medium.woff2') format('woff2'),
+			 url('../fonts/CJK/GenRyuMin/GenRyuMinTW-Medium.ttf') format('truetype');
 	font-weight: 500;
 }
 @font-face {
 	font-family: 'GenRyu';
-	src: url('../fonts/CJK/GenRyuMin/GenRyuMinTW-Bold.ttf');
+	src: url('../fonts/CJK/GenRyuMin/GenRyuMinTW-Bold.woff2') format('woff2'),
+			 url('../fonts/CJK/GenRyuMin/GenRyuMinTW-Bold.ttf') format('truetype');
 	font-weight: bold;
 }
 
 @font-face {
 	font-family: 'GenWan';
-	src: url('../fonts/CJK/GenWanMin/GenWanMinTW-Medium.ttf');
+	src: url('../fonts/CJK/GenWanMin/GenWanMinTW-Medium.woff2') format('woff2'),
+			 url('../fonts/CJK/GenWanMin/GenWanMinTW-Medium.ttf') format('truetype');
 }
