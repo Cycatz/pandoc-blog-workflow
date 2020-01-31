@@ -15,7 +15,7 @@ body {
   line-height: 1.7;
   margin: 0 auto;
   max-width: 45em;
-  background: #fffff0;
+  background: #fffffa;
 	padding: 0 1em;
 }
 
@@ -140,8 +140,14 @@ hr {
 
 pre, code, kbd, samp {
   color: #000;
+	background-color: #f9f8e9;
   font-family: Inconsolata, 'Taipei Sans';
   font-size: 0.98em;
+	border-radius: 0.15em;
+}
+
+pre.sourceCode, code.sourceCode {
+	background-color: #f9f8e9;
 }
 
 pre {
